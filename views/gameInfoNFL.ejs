@@ -1,0 +1,41 @@
+<h2>Game Info</h2>
+
+<link rel="stylesheet" type="text/css" href="homestyle.css">
+
+<table>
+  <tr>
+    <th> <%= stats.summary.home.name %> </th>
+    <th>Team Stats</th> 
+    <th> <%= stats.summary.away.name %> </th>
+  </tr>
+  <tr>
+    <td><%= stats.summary.home.points %></td>
+    <td>Points</td> 
+    <td><%= stats.summary.away.points %></td>
+  </tr>
+  <tr>
+    <td><%= stats.statistics.home.summary.total_yards %></td>
+    <td>Total Yards</td> 
+    <td><%= stats.statistics.away.summary.total_yards %></td>
+  </tr>
+  <tr>
+    <td><%= stats.statistics.home.summary.turnovers %></td>
+    <td>Turnovers</td> 
+    <td><%= stats.statistics.away.summary.turnovers %></td>
+  </tr>
+  <tr>
+    <td><%= stats.statistics.home.summary.possession_time %></td>
+    <td>Time of Possession</td> 
+    <td><%= stats.statistics.away.summary.possession_time %></td>
+  </tr>
+  <tr>
+    <td><%= stats.statistics.home.rushing.totals.yards %></td>
+    <td>Rushing Yards</td> 
+    <td><%= stats.statistics.away.rushing.totals.yards %></td>
+  </tr>
+  <tr>
+    <td><%= stats.statistics.home.receiving.totals.yards %></td>
+    <td>Passing Yards</td> 
+    <td><%= stats.statistics.away.receiving.totals.yards %></td>
+  </tr>
+</table>

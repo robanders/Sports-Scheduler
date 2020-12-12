@@ -1,0 +1,73 @@
+<style type="text/css">
+	
+h2{
+	color:white;
+	text-align:center;
+	background:#4CAF50;
+	margin-top:0px;
+	padding:10px;
+	font-size:44px;
+}
+
+#container{
+	width:500px;
+	margin-right:auto;
+	margin-left:auto;
+	margin-top:120px;
+	border:3px solid black;
+	border-radius:10px;
+	padding:10px;
+
+}
+
+h4{
+	text-align: center;
+	font-size:24px;
+}
+
+a:link, a:visited {
+    background-color:#4CAF50;
+    color: white;
+    padding: 5px 25px;
+    text-align: center; 
+    text-decoration: none;
+    display: inline-block;
+}
+
+a:hover, a:active {
+    background-color: green;
+}
+
+li{
+	list-style:none;
+	display:inline;
+	padding-right:10px;
+	padding-left:10px;
+}
+
+#loginform{
+	padding-left:30px;
+	margin-left:auto;
+	padding-bottom:30px;
+}
+
+#navbtns{
+	padding-left:100px;
+}
+
+</style>
+
+<h2> Log in </h2>
+<div id ='container'>
+	<h4>Enter Username and Password</h4>
+	<form id='loginform' action="/login" method="POST">
+		<input type = "text" name = "username"  placeholder = "username">
+		<input type = "password" name = "password" placeholder = "password">
+		<button>Login</button>
+	</form>
+
+	<div id="navbtns">
+		<li><a href="/register">Sign Up</a></li>
+		<li><a href="/logout">Logout</a></li>
+	</div>
+</div>

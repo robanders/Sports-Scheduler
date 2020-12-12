@@ -1,0 +1,27 @@
+Starting MongoDB
+--navigate to file mongodb/bin then type in mongod
+
+package
+-body parser used to parse messages coming back and forth between api calls
+-Node.js
+	-uses express which helps communicate between client and server. anything with 'app' is part of express
+-mongoose lets us communicate between node and the mongodb
+-passport is used for authentication
+	-passport local supports username and pw
+-passport local mongoose lets us use mongoose for the authentication (encrypting and salt done in mongoose requirement)
+-User also part of authentication
+-express session establishes session which establishes cookies
+
+Mongo Schemas in DB
+-Users table for authentication
+-team schema(name, alias, id, sport)
+-schedule(sport, id, home points, away points, etc.)
+-userTeamSchema(name, id, username) //which teams were selected on teams page
+
+ejs
+-embedded javascript
+-rendering pages with this
+
+file structure
+-views (ejs files that are rendered back to user)
+-public (where js files are that are run (client side files))

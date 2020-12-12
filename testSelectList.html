@@ -1,0 +1,26 @@
+<html>
+<head>
+<script type="text/javascript">
+function findDay()
+{
+var eID = document.getElementById("daysCombo");
+var dayVal = eID.options[eID.selectedIndex].value;
+var daytxt = eID.options[eID.selectedIndex].text;
+alert("Selected Item  " +  daytxt + ", Value " + dayVal);
+}
+</script>
+</head>
+<body>
+<select id="daysCombo">
+<option value="1">Sunday</option>
+<option value="2" selected="selected">Monday</option>
+<option value="3">Tuesday</option>
+<option value="4">Wednesday</option>
+<option value="5">Thursday</option>
+<option value="6">Friday</option>
+<option value="7">Saturday</option>
+</select>
+<br><br>
+	<button onclick="findDay()">Get Selected Day</button>
+</body>
+</html>

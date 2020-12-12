@@ -1,0 +1,42 @@
+<script type="text/javascript">
+        $(function () {
+            $('select#dropdown1').change(function () {
+                var Id = $(this).val();// has paramenter 
+                $.ajax({
+                    url: 'LoadDaTa', //call function LoadData
+                    type: 'POST',
+                    data: JSON.stringify({ Id: Id }), //has paramenter 
+                    dataType: 'json',
+                    contentType: 'application/json',
+                    success: function (data) {
+                        $.each(data, function (key, a) {
+                            // deleted item in dropdownlist 2
+                            var select = $("select#dropdown2");
+                            select.children().remove();
+                            select.append('<option value="">---chose item---</option>');
+                            // loop add item in dropdownlist 2
+                            $.each(data, function (index, a) {
+                                select.append('<option value="' + a.Datavaluefield + '">' + a.Datatextfield + '</option>');
+                            });
+                        });
+                    }
+                });
+            });
+        });
+    </script>
+
+var Database = require('better-sqlite3');
+var db = new Database('foobar.db', options);
+
+var row = db.prepare('SELECT * FROM users WHERE id=?').get(userId);
+console.log(row.firstName, row.lastName, row.email);
+
+Statement#run()
+Statement#get()
+Statement#all()
+Statement#iterate()
+Statement#pluck()
+Statement#bind()
+Properties
+
+

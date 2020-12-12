@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Calendar</title>
+	<link rel='stylesheet' href='node_modules/fullcalendar/dist/fullcalendar.css' />
+	<script src='node_modules/jquery/dist/jquery.min.js'></script>
+	<script src='node_modules/moment/min/moment.min.js'></script>
+	<script src='node_modules/fullcalendar/dist/fullcalendar.js'></script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+
+		    // page is now ready, initialize the calendar...
+
+		    $('#calendar').fullCalendar({
+		        // put your options and callbacks here
+		        events: [
+			        {
+			            title  : 'Steeler Game',
+			            start  : '2017-12-10'
+			        },
+			        {
+			            title  : 'Panthers Game',
+			            start  : '2017-12-10'
+			        },
+			        {
+			            title  : 'Hurricanes Game',
+			            start  : '2017-12-17'			  
+			        },
+			        {
+			            title  : 'Panthers Game',
+			            start  : '2017-12-24T12:30:00',
+			            allDay : false // will make the time show
+			        }
+			  	]
+
+			  	/*eventClick: function(calEvent, jsEvent, view) {
+
+			        alert('Event: ' + calEvent.title);
+			        alert('Coordinates: ' + jsEvent.pageX + ',' + jsEvent.pageY);
+			        alert('View: ' + view.name);
+
+			        // change the border color just for fun
+			        $(this).css('border-color', 'red');
+
+		    	} */
+			});
+
+		});
+	</script>
+</head>
+<body>
+
+	<div id="container">
+		<div id='calendar'></div>
+	</div>
+	
+</body>
+</html>

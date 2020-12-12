@@ -1,0 +1,36 @@
+<h2>NHL Game Info</h2>
+
+<link rel="stylesheet" type="text/css" href="homestyle.css">
+
+<table>
+  <tr>
+    <th> <%= stats.home.name %> </th>
+    <th>Team Stats</th> 
+    <th> <%= stats.away.name %> </th>
+  </tr>
+  <tr>
+    <td><%= stats.home.points %></td>
+    <td>Goals</td> 
+    <td><%= stats.away.points %></td>
+  </tr>
+  <tr>
+    <td><%= stats.home.statistics.total.assists %></td>
+    <td>Assists</td> 
+    <td><%= stats.away.statistics.total.assists %></td>
+  </tr>
+  <tr>
+    <td><%= stats.home.statistics.total.penalties %></td>
+    <td>Penalties</td> 
+    <td><%= stats.away.statistics.total.penalties %></td>
+  </tr>
+  <tr>
+    <td><%= stats.home.statistics.total.faceoff_win_pct %></td>
+    <td>Faceoff Win %</td> 
+    <td><%= stats.away.statistics.total.faceoff_win_pct %></td>
+  </tr>
+  <tr>
+    <td><%= stats.home.statistics.total.hits %></td>
+    <td>Hits</td> 
+    <td><%= stats.away.statistics.total.hits %></td>
+  </tr>
+</table>

@@ -1,0 +1,61 @@
+<h2>Game Info</h2>
+
+<link rel="stylesheet" type="text/css" href="homestyle.css">
+
+<table>
+  <tr>
+    <th> <%= stats.home.name %> </th>
+    <th>Team Stats</th> 
+    <th> <%= stats.away.name %> </th>
+  </tr>
+  <tr>
+    <td><%= stats.home.statistics.points %></td>
+    <td>Points</td> 
+    <td><%= stats.away.statistics.points %></td>
+  </tr>
+  <tr>
+    <td><%= stats.home.statistics.offensive_rebounds %></td>
+    <td>Offensive Rebounds</td> 
+    <td><%= stats.away.statistics.offensive_rebounds %></td>
+  </tr>
+  <tr>
+    <td><%= stats.home.statistics.defensive_rebounds %></td>
+    <td>Defensive Rebounds</td> 
+    <td><%= stats.away.statistics.defensive_rebounds %></td>
+  </tr>
+  <tr>
+    <td><%= stats.home.statistics.assists %></td>
+    <td>Assists</td> 
+    <td><%= stats.away.statistics.assists %></td>
+  </tr>
+  <tr>
+    <td><%= stats.home.statistics.steals %></td>
+    <td>Steals</td> 
+    <td><%= stats.away.statistics.steals %></td>
+  </tr>
+  <tr>
+    <td><%= stats.home.statistics.blocks %></td>
+    <td>Blocks</td> 
+    <td><%= stats.away.statistics.blocks %></td>
+  </tr>
+  <tr>
+    <td><%= stats.home.statistics.turnovers %></td>
+    <td>Turnovers</td> 
+    <td><%= stats.away.statistics.turnovers %></td>
+  </tr>
+  <tr>
+    <td><%= stats.home.statistics.field_goals_pct %></td>
+    <td>FG %</td> 
+    <td><%= stats.away.statistics.field_goals_pct %></td>
+  </tr>
+  <tr>
+    <td><%= stats.home.statistics.three_points_pct %></td>
+    <td>3PT %</td> 
+    <td><%= stats.away.statistics.three_points_pct %></td>
+  </tr>
+  <tr>
+    <td><%= stats.home.statistics.free_throws_pct %></td>
+    <td>FT %</td> 
+    <td><%= stats.away.statistics.free_throws_pct %></td>
+  </tr>
+</table>

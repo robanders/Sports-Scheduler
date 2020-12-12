@@ -1,0 +1,61 @@
+
+
+<h2> Selecting Teams </h2>
+<link rel="stylesheet" type="text/css" href="homestyle.css">
+
+<style type="text/css">
+	
+	#track-teams{
+		margin-top:50px;
+		margin-left:auto;
+		margin-right:auto;
+		width:500px;
+		border:3px black solid;
+		padding-left:4px;
+		border-radius:10px;
+	}
+
+	#track-teams > h3{
+		text-align:center;
+	}
+
+	#add-team{
+
+	}
+
+	#sport-selector{
+
+	}
+</style>
+
+
+	<ul>
+		<li><a href="/calendar">Calendar</a></li>
+		<li><a href="/logout">Logout</a></li>
+	</ul>
+
+
+	<script src='jquery.min.js'></script>
+
+	<script src='selectTeams.js'></script>
+
+<div id ='track-teams'>
+	<h3>Select Teams to Follow</h3>
+	<select id ="sport-selector"></select>
+
+	<select id ="team-selector"></select>
+
+	<button type="button" id="add-team">Add Team</button>
+
+
+
+	<h3>Your Tracked Teams</h3>
+	<ol id = 'team-list'>
+
+	</ol>	
+</div>
+
+
+
+
+

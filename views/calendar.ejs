@@ -1,0 +1,51 @@
+<h1> Your Sports Calendar </h1>
+
+<style type="text/css">
+	h1{
+		color:white;
+		text-align:center;
+		background:#4CAF50;
+		margin-top:0px;
+		padding:10px;
+		font-size:44px;
+	}
+
+	li{
+		list-style: none;
+	}
+
+	.nav:link, .nav:visited {
+	    background-color:#4CAF50;
+	    color: white;
+	    padding: 5px 25px;
+	    text-align: center; 
+	    text-decoration: none;
+	    display: inline-block;
+	}
+
+	.nav:hover, .nav:active {
+	    background-color: green;
+	}
+
+	#nav-link{
+		padding-bottom:3px;
+	}
+	
+
+</style>
+
+<li id='nav-link'><a class='nav' href="/selectTeams">Select Teams</a></li>
+<li id='nav-link2'><a class='nav' href="/logout">Logout</a></li>
+
+<title>Sports Calendar</title>
+<link rel='stylesheet' href='fullcalendar.css' />
+<script src='jquery.min.js'></script>
+<script src='moment.min.js'></script>
+<script src='fullcalendar.js'></script>
+<script src='processCalendar.js'></script>
+
+
+
+<div id='calendar'></div>
+	
+	
